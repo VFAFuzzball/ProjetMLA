@@ -1,7 +1,7 @@
 # Projet de l'UE "Machine Learning Avancé", M2 Systèmes Avancés et Robotique, Sorbonne Université 2022-2023
 
 ## Groupe :
-- Bounadja Bilal
+- Bounadja Bilal 3676639
 - Daube Victor 3671193
 - Nameki Malo 3800560
 - Touami Abdelrahmaine
