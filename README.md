@@ -47,3 +47,5 @@
 ### Programmes de prédiction :
 
 ## Description des fichiers :
+fgsm file is used to generate adversarial examples using fast gradient sign method
+RBF_network file is used to implement a Radial basis function network and we also test it on adversarial examples generated with the Fast gradient sign method
