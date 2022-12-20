@@ -4,7 +4,7 @@
 - Bounadja Bilal 3676639
 - Daube Victor 3671193
 - Nameki Malo 3800560
-- Touami Abdelrahmaine
+- Touami Abdelrahmaine 3802290
 
 ## Objectif :
 
@@ -41,9 +41,14 @@
 4. Different Kinds of Model Capacity
 
 ## Installation et exécution des programmes :
+pip install requirement.txt
 
 ### Programmes d'entrainement :
 
 ### Programmes de prédiction :
 
 ## Description des fichiers :
+fgsm file is used to generate adversarial examples using fast gradient sign method
+RBF_network file is used to implement a Radial basis function network and we also test it on adversarial examples generated with the Fast gradient sign method
+Part 5 repository is used to implement Logistic Regression to classify 3 and 7s from MNIST dataset. This model was used to have
+an intuition in the process in creating the adversarial examples.
