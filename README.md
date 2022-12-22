@@ -32,6 +32,8 @@ And some more common :
 
 - fgsm.ipynb is the notebook you will want to run if you want to see our adversarial example generator in action with linear neural networks
 - fgsm.py is only the adversarial example generator if you want to import it
+- GoogLeNet_Colab is a Google Colab version of our try at implementing GoogLeNet and evaluating adversarial Tiny ImageNet examples with it.
+- GoogLeNet_GPU_Server is a th version of our try at implementing GoogLeNet and evaluating adversarial Tiny ImageNet examples with it used on a GPU server.
 - RBF_network.ipynb if the notebook you should run if you want to see that non-linear networks are more resistant than linear ones to adversarial attacks
 - logistic_regression.ipynb is used to classify 3 and 7s from the MNIST dataset using logistic regression. Then it plots the weights obtained et creates some adversarial example to show the basic working principles of the Fast Gradient Sign Method
 - adversarial_training contains code showing that it is possible to adversarially train a deep network
