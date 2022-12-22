@@ -17,11 +17,11 @@
 ## Résultats reproduits :
 
 1. Linear Perturbation of Non-Linear Models :
-   1. Méthode du signe du gradient rapide (p. 3 début, dataset : ImageNet ou CIFAR-10, modèle : GoogLeNet)
-      - en utilisation eps = .25, un classificateur shallow softmax doit avoir une erreur de 99.9% avec une confiance moyenne de 79.3% sur le test set de MNIST
-      - même configuration avec un réseau maxout 89.4% d'erreurs et confiance à 97.6%
-      - eps = .1 réseau convolutionnel maxout sur une version prétraité de CIFAR-10 erreur 87.15% confiance à 96.6% sur les labels incorrects
-      - rotation de x par un petit angle en direction du gradient donne également des exemples adversariaux
+   1. Fast Gradient Sign Method (FGSM)
+      - Avec le paramètre $\epsilon = 0.25$ (valeur provenant de l'article), un classificateur shallow softmax doit avoir une erreur de 99.9% avec une confiance moyenne de 79.3% sur le test set de MNIST
+      - Même configuration avec un réseau maxout : 89.4% d'erreurs et confiance à 97.6%
+      - Enfin, avec $\epsilon = 0.007$, le réseau GoogLeNet et la base de données ImageNet, on tente d'effectuer le même processus. Malheureusement, ImageNet étant une base de données assez lourde, nous avons opté pour TinyImageNet.
+      
 2. Adversarial Training of Linear Models versus Weight Decay
    1. Test de la méthode précédente avec une régression logistique pour classifier des 3 et des 7 (p. 3 fin, p. 4)
       - modèle régression logistique erreur 1.6%
@@ -29,6 +29,7 @@
       - multiclass softmax regression, maxout networks on MNIST, good results using adversarial training with eps = .25
       - idem précédent, coefficient = .0025 => > 5% error
       - smaller weight decay coefficients permitted succesful training but conferred no regularization benefit
+      
 3. Adversarial Training of Deep Networks :
    1. Szegedy et al. (2014b) : demander s'il faut aussi faire les tests cités
    2. Training with an adversarial objective funtion based on the fast gradient sign method, alpha = 0.5 => effective regularizer (p. 5)
