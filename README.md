@@ -15,7 +15,14 @@ We tried to reimplement some important empirical results from "[Explaining and h
 
 ## How to run the project :
 
-We mostly used Jupyter Notebooks so you will only need to run the notebooks to use them. You may need to install the librairies mentioned in our requirements.txt file before running the notebooks though.
+We mostly used Jupyter Notebooks so you will only need to run the notebooks to use them. You may need to install common ML librairies to run the notebooks :
+- tensorflow
+- tensorflow_addons
+And more common one :
+- numpy
+- matplotlib.pyplot
+- google.colab
+- PIL
 
 ## Résultats reproduits :
 
