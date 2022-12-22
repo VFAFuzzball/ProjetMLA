@@ -6,8 +6,8 @@ def get_adversarial_exemple(model, dataset, eps):
   for images, labels in dataset:
     with tf.GradientTape() as tape:
       tape.watch(images)
-      predictions = model(images)
-      loss = tf.keras.losses.sparse_categorical_crossentropy(labels, predictions)
+      predictions = model(images)      
+      loss = tf.keras.losses.get(model.loss)(labels, predictions)
     gradient = tape.gradient(loss, images)
     signed_grad = tf.sign(gradient)
     adversarial_example = images + eps * signed_grad
